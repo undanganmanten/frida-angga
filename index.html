@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="asset/image/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -34,9 +35,9 @@
                 
             </div>
 
-            <!-- <audio id="song" hidden loop> 
+            <audio id="song" hidden loop> 
                 <source src="asset/audio/i.mp3" type="audio/mpeg">
-            </audio> -->
+            </audio>
 
             <div id="top">
                 <div class="container-top"> 
@@ -119,8 +120,26 @@
             </div>
 
             <div class="direction">
-                <a href="https://goo.gl/maps/w7DeyibDazhSc7um6">Get direction</a>
+                <!-- <a href="https://goo.gl/maps/w7DeyibDazhSc7um6" target="_blank">Get Direction</a> -->
+                <a href="https://goo.gl/maps/saFMWGc7Yh62XJyF7" target="_blank">Get Direction</a>
             </div>
+            
+            <div class="amplop">
+                <div class="amplop-title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">Amplop Digital</div>
+                <p class="amplop-text" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">Doa restu anda merupakan karunia yang sangat berarti bagi kami. dan jika memberi adalah ungkapan tanda terimakasih anda, anda dapat memberi kado secara cashless</p>
+                <!-- <button class="trigger" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000"><i class="fa fa-gift" aria-hidden="true"></i> Kirim Hadiah</button> -->
+                <div class="bank">
+    
+                    <div class="card-bank" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="3000">
+                        <img src="asset/image/bca.png" alt="">
+                        <span class="line"></span>
+                        <p id="norek1">1520505721</p>
+                        <p>a/n Frida Nabila Yuninda</p>
+                        <button class="btn-rek" onclick="copyToClipboard('norek1')"><i class="fa fa-clone" aria-hidden="true"></i> Salin</button>
+                    </div>
+
+                </div>
+            </div>  
             
             <div class="content-closing">
                 <div data-aos="fade-up" data-aos-duration="3000">
