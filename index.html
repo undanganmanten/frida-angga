@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida &#9829; Angga</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="asset/image/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+</head>
+
+<body onload="toggle(),create_unfinished_task()">
+    <div class="container">     
+        <div class="wrapper">
+            <div id="popup">
+                <div class="wrapper-cover">
+                    <div class="cover-popup">
+                        <img src="asset/image/cover.png" alt="">
+                    </div>
+                    <div class="title">
+                        <img src="asset/image/logo.png" class="title-logo" alt="">
+                        <img src="asset/image/couple name.png" class="title-nama" alt="">
+                        <img src="asset/image/tanggal top.png" class="title-tanggal" alt="">
+                        <!-- <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">Welcome To</h3>
+                        <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">The Wedding Celebration of</h3> -->
+                        <!-- <h4 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000" class="font-bromello">Frida & Angga</h4> -->
+                        <a href="#" onclick="toggle(), playing()" data-aos="zoom-in" data-aos-duration="3000"> Open Invitation</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- <audio id="song" hidden loop> 
+                <source src="asset/audio/i.mp3" type="audio/mpeg">
+            </audio> -->
+
+            <div id="top">
+                <div class="container-top"> 
+                    <div class="cover-top">
+                        <img src="asset/image/top.jpg" alt="">
+                    </div>  
+                    <!-- <div class="content-top">
+                        <h2 class="font-bigger">We Are Getting Married</h2>
+                        <h2 class="font-bromello">Frida & Angga<h2>
+                        <h2>30 Juli 2022</h2>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="arrum-section">
+                <div class="content-isra">
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <p><i>ASSALAAMUALAIKUM WARAHMATULAHI WABAROKATUH</i></p>
+                        <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i               
+                        untuk menghadiri akad & resepsi pernikahan putra putri kami: </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="couple-photo">
+                <img src="asset/image/couple-photo.jpg" alt="">
+            </div>
+
+            <div class="couple-name">
+                <img src="asset/image/content-name.png" alt="">
+            </div>
+
+            <div class="the-date">
+                <img src="asset/image/the date.jpg" alt="">
+            </div>
+
+            <div id="counting">
+                <div class="count-down" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="time">
+                        <div id="habis"></div>
+                        <div class="times" id="times">
+                            <div id="day"></div>
+                            <div class="font-smaller">day(s)</div>
+                        </div>
+    
+                        <div class="separator" id="separator">:</div>
+                        
+                        <div class="times" id="times1">
+                            <div id="hour"></div>
+                            <div class="font-smaller">hour(s)</div>
+                        </div>
+                        
+                        <div class="separator" id="separator1">:</div>
+                        
+                        <div class="times" id="times2">
+                            <div id="minute"></div>
+                            <div class="font-smaller">minute(s)</div>
+                        </div>
+                        
+                        <div class="separator" id="separator2"> :</div>
+                        
+                        <div class="times" id="times3">
+                            <div id="second"></div>
+                            <div class="font-smaller">second(s)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="the-date">
+                <img src="asset/image/box.jpg" alt="">
+            </div>
+            
+            <div class="date-time">
+                <img src="asset/image/date-time.png" alt="">
+            </div>
+
+            <div class="map">
+                <img src="asset/image/map.jpg" alt="">
+            </div>
+
+            <div class="direction">
+                <a href="https://goo.gl/maps/w7DeyibDazhSc7um6">Get direction</a>
+            </div>
+            
+            <div class="content-closing">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <p>Suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i 
+                        berkenan hadir untuk memberikan dan resatu kepada kedua mempelai</p>
+                    <p><i>WASSALAAMUALAIKUM WARAHMATULAHI WABAROKATUH</i></p>
+                </div>
+            </div>
+      
+       
+            <div class="sorry-protokol">
+                <div class="protokol" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="asset/image/Prokes.png" alt="">
+                </div>
+            </div>
+        
+         <div class="contact-us box" >
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <h2>Wishes For Us</h2>
+                    <p>Tinggalkan do'a/pesan/harapan untuk Frida & Angga</p>
+                    <a href="#newcomment">
+                        <button> 💌 Tuliskan Pesan..</button>
+                    </a>
+        
+                    <div class="container1"></div>
+        
+                    <div class="footer-content">
+                        <form id="newcomment">
+                            <div class="form-elements">
+                                <input id="name"  type="text" placeholder="Nama anda / Nama anda sekeluarga" required/>
+                                <textarea id="message" rows="2" placeholder="Tuliskan do'a/pesan/harapan anda disini..." required></textarea>
+                                <div class="btn">
+                                    <button id="input_button" onclick="add_task()" >Send</button>
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                    <div class="thankyou">
+                        <h2>Thank You</h2>
+                        <img src="asset/image/couple name.png" alt="">
+                        <!-- <h5>Frida & Angga<h5> -->
+                    </div>
+                </div>
+            </div> 
+            
+            
+        
+            <div class="footer">
+                <p>Made with full of &#10084; by .</p>
+                <br>
+                <a href="https://undanganmanten.my.id" target="_blank">Undangan Manten.</a>
+            </div>
+            
+            <div class="loader-wrapper">
+                <div id="heart"></div>
+                <br>
+                <p>Frida & Angga</p>
+            </div>
+        </div>   
+    </div>
+    
+    
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
