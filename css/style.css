@@ -860,7 +860,6 @@ img{
   height: 100px;
   /* font-size: 1.0625rem; */
   background: transparent;
-  /* padding-left: 10px; */
   border: 1px solid #263f22;
   color: #263f22;
   font-family: 'Josefin Sans',sans-serif;
@@ -869,6 +868,7 @@ img{
 #name::-webkit-input-placeholder,
 #message::-webkit-input-placeholder{
   color: #263f22;
+  padding-left: 8px;
 }
 
 .contact-us form #message{
