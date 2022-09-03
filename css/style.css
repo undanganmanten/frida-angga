@@ -339,16 +339,10 @@ img{
   
 }
 
-.content-isra img{
-  width: 80px !important;
-  position: relative!important;
-}
-
 .content-isra p{
-  padding: 20px 20px;
+  padding: 15px 15px;
   line-height: 1px;
 }
-
 
 .content-isra i{
   font-weight: bold;
@@ -548,6 +542,100 @@ img{
   background: #263f22;
 }
 
+.amplop{
+  width: 414px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.amplop-title{
+  font-family: 'neutron';
+  font-size: 30px ;
+  font-weight: bold;
+  color: #263f22;
+  letter-spacing: 3px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.amplop-text{
+  color: #263f22;
+  font-family: "neutron";
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 30px;
+  margin-bottom: 0px;
+}
+
+.trigger,.btn-rek{
+  text-align: center;
+  padding: 3px 30px;
+  background: transparent;
+  color: #263f22;
+  font-size: 13px;
+  outline: none;
+  border: solid 1px #263f22;
+  border-radius: 20px;
+  font-family: 'Playfair Display', serif;
+  /* font-weight: bold; */
+  font-size: 17px;
+}
+
+.btn-rek:hover{
+  color: #fff;
+  background: #263f22;
+}
+
+.bank{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+.card-bank{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: #263f22 solid 1px;
+}
+
+.card-bank p{
+  margin-bottom: 15px;
+  color: #263f22;
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-bank img{
+  width: 50%;
+}
+
+.line{
+  width: 85%;
+  display: block;
+  height: 3px;
+  background-color: #263f22;
+  margin: 15px auto;
+}
+
 .content-closing{
   width: 414px;
   height: max-content;
@@ -659,99 +747,6 @@ img{
 }
 
 
-.amplop{
-  width: 414px;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0px;
-}
-
-.amplop-title{
-  font-family: 'neutron';
-  font-size: 30px ;
-  font-weight: bold;
-  color: #263f22;
-  letter-spacing: 3px;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.amplop-text{
-  color: #263f22;
-  font-family: "neutron";
-  font-weight: lighter;
-  font-size: 15px;
-  text-align: center;
-  padding: 0px 30px;
-  margin-bottom: 0px;
-}
-
-.trigger,.btn-rek{
-  text-align: center;
-  padding: 3px 30px;
-  background: transparent;
-  color: #263f22;
-  font-size: 13px;
-  outline: none;
-  border: solid 1px #263f22;
-  border-radius: 20px;
-  font-family: 'Playfair Display', serif;
-  /* font-weight: bold; */
-  font-size: 17px;
-}
-
-.btn-rek:hover{
-  color: #fff;
-  background: #263f22;
-}
-
-.bank{
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: max-content;
-}
-
-.card-bank{
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: transparent;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  border: #263f22 solid 1px;
-}
-
-.card-bank p{
-  margin-bottom: 15px;
-  color: #263f22;
-  font-family: 'Playfair Display', serif;
-  font-weight: lighter;
-  font-size: 18px;
-  text-align: center;
-}
-
-.card-bank img{
-  width: 50%;
-}
-
-.line{
-  width: 85%;
-  display: block;
-  height: 3px;
-  background-color: #263f22;
-  margin: 15px auto;
-}
 
 .sorry-protokol{
   display: flex;
@@ -965,23 +960,16 @@ img{
 
 .footer{
   display: flex;
-  /* width: 10; */
-  /* flex-direction:column ; */
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: transparent;
   padding: 35px 0 15px 0;
-  /* background: url("../asset/image/bg-footer.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; */
-  
 }
 
 .footer p{
   color: #263f22;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .footer a{
@@ -990,8 +978,11 @@ img{
   padding-bottom: 20px;
 }
 
- @media(max-width: 414px){
-
+@media(max-width: 413px){
+  .container{
+    overflow-x: hidden !important;
+  }
+  
   .wrapper{
     width: 100vw;
   }
@@ -1042,29 +1033,32 @@ img{
     position: absolute;
   }
 
-  .content-isra img{
-    width: 80px;
+  .arrum-section{
+    width: 100vw;
+  }
+
+  .content-isra{
+    width: 100vw;
   }
 
   .content-isra p{
     padding: 20px 30px;
-  
   }
 
-  .content-isra h3 b,
-  .content-isra p{
-    font-size: 14px;
-    line-height: 20px;
+  .couple-photo img{
+    width: 100vw;
   }
 
-  .bride img,
-  .groom, img{
-    width: 250px;
+  .couple-name{
+    width: 100vw;
   }
 
-  .text-block1 p,
-  .text-block p{
-    font-size: 12px;
+  .couple-name img{
+    width: 90vw;
+  }
+
+  .the-date img{
+    width: 100vw;
   }
 
   .playfair{
@@ -1079,8 +1073,22 @@ img{
     font-size: 42px !important;
   }
 
+  #counting{
+    width: 100vw;
+  }
+
+  .count-down{
+    width: 100vw;
+    margin-top: -60px;
+  }
+
   .count-down p{
     font-size: 32px;
+  }
+
+  .time{
+    margin-bottom: 0px;
+    font-size: 40px;
   }
 
   .separator{
@@ -1088,92 +1096,39 @@ img{
   }
 
   .font-smaller{
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #habis.aktif{
-    font-size: 15px;
+    font-size: 12px;
   }
   
-  .date{
-    margin-top: 10px;
+  .date-time{
+    width: 100vw;
   }
 
-  .date .save-date p{
-    font-size: 32px !important;
-  }
-/* 
-  .waktu .resepsi span,
-  .waktu .akad span{
-    font-size: 13px;
+  .date-time img{
+    width: 290px;
   }
 
-  .waktu .resepsi p,
-  .waktu .akad p{
-    font-size: 10px !important;
-  } */
-
-  .waktu .sabtu p{
-    font-size: 20px !important;
-    line-height: 30px;
+  .map{
+    width: 100vw;
   }
 
-  .kediaman{
-    padding: 20px 60px;
+  .map img{
+    width: 340px;
   }
 
-  .kediaman p{
-    font-size: 13px !important;
-    line-height: 20px;
-    margin-top: 0;
-    padding: 0;
+  .amplop{
+    width: 100vw;
   }
 
-  .text-block2 a{
-    font-size: 20px ;
-    border-radius: 15px;
+  .content-closing{
+    width: 100vw;
   }
 
-  .sorry p{
-    font-size: 13px !important;
-    line-height: 20px;
-    padding: 0 10px;
-  }
-
-  .sorry1 p{
-    font-size: 13px !important;
-    padding: 20px 10px 0 10px;
-    line-height: 20px;
-  }
-  
-  .live-stream p{
-    background-color: rgba(70, 96, 137,.5);
-    border-radius: 15px;
-    padding: 5px 15px !important;
-    font-family: 'christmas'!important;
-    font-size: 20px !important;
-    color: black;
-    margin: 10px 10px 0 0 ;
-  }
-  
-  .icon-sosmed a img{
-    width: 70px;
-    margin: 0px 28px 0 0;
-  }
-
-  .prokes{
-    margin-top: 10px ;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .prokes h2{
-    font-size: 35px !important;
-  }
-  
-  .prokes .pro1 img{
-    width: 100px;
-    margin: 30px;
+  .protokol img{
+    width: 100vw;
   }
 
   .contact-us{
@@ -1231,7 +1186,14 @@ img{
   }
 
   .footer{
-      padding: 50px 0 40px 0;
+      padding: 35px 0 15px 0;
   }
 
+  .footer p{
+    padding-bottom: 103px;
+  }
+
+  .footer a{
+    padding-bottom: 100px;
+  }
 } 
