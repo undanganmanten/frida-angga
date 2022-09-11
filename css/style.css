@@ -808,7 +808,19 @@ img{
   /* line-height: 1px; */
 }
 
+.video-mempelai{
+  width: 414px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
+.video-mempelai iframe{
+  width: 88%;
+  height: 200px;
+}
 
 
 .save-the-date{
@@ -1272,6 +1284,10 @@ img{
   }
 
   .content-closing{
+    width: 100vw;
+  }
+
+  .video-mempelai{
     width: 100vw;
   }
 
