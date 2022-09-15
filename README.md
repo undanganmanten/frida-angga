@@ -1,2 +1,2 @@
-# annur-galant
+# frida-angga
 see the prototype <a href="http://undanganmanten.my.id/frida-angga" target="_blank">here</a>
